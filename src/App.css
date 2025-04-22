@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: #333;
+}
+
+.todo_cont {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.hd {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 30px 0px;
+  color: #ff6347;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #f57c00;
+}
+
+.items_cont {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.items_row {
+  margin: 10px 0;
+  background: #ffefd5;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.all_buttons {
+  min-width: 80px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.all_buttons:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .hd {
+    font-size: 28px;
+  }
+
+  .items_row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .all_buttons {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
